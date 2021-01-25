@@ -39,8 +39,8 @@ baseurl: "/geoca_pycsw_howto" # the subpath of your site, e.g. "/blog".
 # Github and twitter are optional:
 minima:
   social_links:
-    twitter: fastdotai
-    github: fastai
+    twitter: b5lu
+    github: bo-lu
 
 # Set this to true to get LaTeX math equation support
 use_math: 
