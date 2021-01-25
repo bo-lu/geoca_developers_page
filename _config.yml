@@ -6,8 +6,8 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: Geo.ca CSW Endpoint How-tos
-description: An easy introduction the in use of the CSW Endpoint.
+title: fastpages
+description: An easy to use blogging platform with support for Jupyter Notebooks.
 github_username: bo-lu
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "geoca_pycsw_howto"
@@ -34,7 +34,7 @@ url: "https://bo-lu.github.io" # the base hostname & protocol for your site, e.g
 #
 # 3. You must replace the parameter `baseurl` in _action_files/settings.ini with the same value as you set here but WITHOUT QUOTES.
 #
-baseurl: "" # the subpath of your site, e.g. "/blog".
+baseurl: "/geoca_pycsw_howto" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
 minima:
@@ -58,7 +58,7 @@ annotations: false
 show_tags: true
 
 # Add your Google Analytics ID here if you have one and want to use it
-google_analytics: UA-57531313-5
+google_analytics: 
 
 exclude:
   - docker-compose.yml
