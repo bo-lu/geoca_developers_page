@@ -4,18 +4,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Geo.ca Cataloguing Services for the Web (CSW) How-to | An easy introduction to the CSW standard and its features.</title>
+<title>An easy guide in using the CSW endpoint on geo.ca | Geo.ca Cataloguing Services for the Web (CSW) How-to</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Geo.ca Cataloguing Services for the Web (CSW) How-to" />
+<meta property="og:title" content="An easy guide in using the CSW endpoint on geo.ca" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="An easy introduction to the CSW standard and its features." />
-<meta property="og:description" content="An easy introduction to the CSW standard and its features." />
-<link rel="canonical" href="https://bo-lu.github.io/geoca_pycsw_howto/" />
-<meta property="og:url" content="https://bo-lu.github.io/geoca_pycsw_howto/" />
+<meta name="description" content="An easy guide in using the CSW endpoint on geo.ca" />
+<meta property="og:description" content="An easy guide in using the CSW endpoint on geo.ca" />
+<link rel="canonical" href="https://bo-lu.github.io/geoca_pycsw_howto/markdown/2021/01/26/pycsw_howto.html" />
+<meta property="og:url" content="https://bo-lu.github.io/geoca_pycsw_howto/markdown/2021/01/26/pycsw_howto.html" />
 <meta property="og:site_name" content="Geo.ca Cataloguing Services for the Web (CSW) How-to" />
-<meta property="og:image" content="https://bo-lu.github.io/geoca_pycsw_howto/images/logo.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-01-26T00:00:00-06:00" />
 <script type="application/ld+json">
-{"url":"https://bo-lu.github.io/geoca_pycsw_howto/","@type":"WebSite","headline":"Geo.ca Cataloguing Services for the Web (CSW) How-to","image":"https://bo-lu.github.io/geoca_pycsw_howto/images/logo.png","name":"Geo.ca Cataloguing Services for the Web (CSW) How-to","description":"An easy introduction to the CSW standard and its features.","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://bo-lu.github.io/geoca_pycsw_howto/markdown/2021/01/26/pycsw_howto.html"},"url":"https://bo-lu.github.io/geoca_pycsw_howto/markdown/2021/01/26/pycsw_howto.html","@type":"BlogPosting","headline":"An easy guide in using the CSW endpoint on geo.ca","dateModified":"2021-01-26T00:00:00-06:00","datePublished":"2021-01-26T00:00:00-06:00","description":"An easy guide in using the CSW endpoint on geo.ca","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/geoca_pycsw_howto/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://bo-lu.github.io/geoca_pycsw_howto/feed.xml" title="Geo.ca Cataloguing Services for the Web (CSW) How-to" /><link rel="shortcut icon" type="image/x-icon" href="/geoca_pycsw_howto/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -67,44 +68,55 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><h1 id="posts">Posts</h1>
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">An easy guide in using the CSW endpoint on geo.ca</h1><p class="page-description">An easy guide in using the CSW endpoint on geo.ca</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-01-26T00:00:00-06:00" itemprop="datePublished">
+        Jan 26, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
 
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/geoca_pycsw_howto/categories/#markdown">markdown</a>
+        
+      
+      </p>
+    
 
-  
+    </header>
 
-  <!-- Hide posts if front matter flag hide:true -->
-  
-  
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#geoca-csw-how-to">Geo.ca CSW How-to</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#the-csw-and-hnap-standard">The CSW and HNAP standard</a></li>
+<li class="toc-entry toc-h2"><a href="#geoca-csw-how-to-1">Geo.ca CSW How-to</a></li>
+</ul>
+</li>
+</ul><h1 id="geoca-csw-how-to">
+<a class="anchor" href="#geoca-csw-how-to" aria-hidden="true"><span class="octicon octicon-link"></span></a>Geo.ca CSW How-to</h1>
 
-  <!-- Sort posts by rank, then date -->
-  
-  
-  
+<h2 id="the-csw-and-hnap-standard">
+<a class="anchor" href="#the-csw-and-hnap-standard" aria-hidden="true"><span class="octicon octicon-link"></span></a>The CSW and HNAP standard</h2>
 
- 
-  
+<p>The Catalogue Service for the Web (CSW) is an Open Geospatial Consortium (OGC) standard used to publish and search for metadata, services and related information objects. On geo.ca, the metadata standard is structured according to the North American Profile of ISO 19115:2003 (NAP).</p>
 
-   <!-- Assemble final sorted posts array -->
-  
-  <ul class="post-list"><li><h3>
-    <a class="post-link" href="/geoca_pycsw_howto/markdown/2021/01/26/pycsw_howto.html">
-    An easy guide in using the CSW endpoint on geo.ca
-    </a>
-</h3><p class="post-meta-description">An easy guide in using the CSW endpoint on geo.ca</p><p class="post-meta">Jan 26, 2021</p>
-</li><li><h3>
-    <a class="post-link" href="/geoca_pycsw_howto/jupyter/2020/02/20/test.html">
-    Fastpages Notebook Blog Post
-    </a>
-</h3><p class="post-meta-description">A tutorial of fastpages for Jupyter notebooks.</p><p class="post-meta">Feb 20, 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/geoca_pycsw_howto/markdown/2020/01/14/test-markdown-post.html">
-    An Example Markdown Post
-    </a>
-</h3><p class="post-meta-description">A minimal example of using markdown with fastpages.</p><p class="post-meta">Jan 14, 2020</p>
-</li></ul>
+<p>Due to the flexible nature of the NAP standard, the Government of Canada has created a Harmonized North American Profile (HNAP) which takes the elements provided in the NAP but adjusts the cardinalities of the elements. In addition, specific Government of Canada business rules have been added to the HNAP profile in order to control the values allowed in elements. For example, keywords used in metadata records must be supplied from the <a href="https://canada.multites.net/cst/def.asp?lang=en&amp;n=E5807AB0-1">Government of Canada Core Subject Thesaurus</a>.</p>
 
-    </div>
+<h2 id="geoca-csw-how-to-1">
+<a class="anchor" href="#geoca-csw-how-to-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Geo.ca CSW How-to</h2>
+
+<p>The geo.ca uses the OGC Certified Compliant CSW implementation <a href="https://pycsw.org/">pycsw</a>.</p>
+
+  </div><a class="u-url" href="/geoca_pycsw_howto/markdown/2021/01/26/pycsw_howto.html" hidden></a>
+</article>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/geoca_pycsw_howto/"></data>
