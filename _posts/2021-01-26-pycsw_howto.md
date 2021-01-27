@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: An easy guide in using the CSW endpoint on geo.ca
-categories: [markdown]
+categories: [ogc] [csw] [hnap] [markdown] [documentation]
 title: An easy guide in using the CSW endpoint on geo.ca
 ---
 # How to use the geo.ca CSW endpoint
