@@ -7,7 +7,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: Developer resources for the Geo.ca Catalogue
-description: An easy introduction to the standards supported by geo.ca. 
+description: An easy introduction to the technologies and standards supported by geo.ca. 
 github_username: bo-lu
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "geoca_developers_page"
