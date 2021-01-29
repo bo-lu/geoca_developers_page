@@ -1,1 +1,1 @@
-Sitemap: https://bo-lu.github.io/geoca_pycsw_howto/sitemap.xml
+Sitemap: https://bo-lu.github.io/geoca_developers_page/sitemap.xml
