@@ -2,7 +2,7 @@
   
     
         "post0": {
-            "title": "An easy guide in using the OGC API endpoints on geo.ca",
+            "title": "An easy guide in using the OGC API - Records endpoint",
             "content": "How to use the geo.ca OGC API endpoint . The OGC API standards . Geo.ca has implemented the developing OGC API family of standards. These new standards build upon the legacy of OGC Web standards (WMS, WFS, WCS, WPS, CSW, etc.), but uses modern web standards to access geospatial content. As the OGC API standards evolve and are finalized, geo.ca will leverage these new standards in building interoperable . For more information on the OGC API standards, please visit the OGC API Roadmap. . Geo.ca OGC API How-to . Geo.ca uses the OGC Certified Compliant implementation pygeoapi. At the time of this writing the version of pygeoapi is 0.10 .",
             "url": "https://bo-lu.github.io/geoca_developers_page/markdown/pygeoapi/ogc/api/2021/01/29/OGC-API.html",
             "relUrl": "/markdown/pygeoapi/ogc/api/2021/01/29/OGC-API.html",
