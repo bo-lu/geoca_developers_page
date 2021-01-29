@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>An overview of Viewer technology used in the CGP | Developer Resources for the Geo.ca Catalogue</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="An overview of Viewer technology used in the CGP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="CGP GeoView" />
+<meta property="og:description" content="CGP GeoView" />
+<link rel="canonical" href="https://bo-lu.github.io/geoca_developers_page/markdown/2021/01/29/GeoView.html" />
+<meta property="og:url" content="https://bo-lu.github.io/geoca_developers_page/markdown/2021/01/29/GeoView.html" />
+<meta property="og:site_name" content="Developer Resources for the Geo.ca Catalogue" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-01-29T00:00:00-06:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://bo-lu.github.io/geoca_developers_page/markdown/2021/01/29/GeoView.html"},"url":"https://bo-lu.github.io/geoca_developers_page/markdown/2021/01/29/GeoView.html","@type":"BlogPosting","headline":"An overview of Viewer technology used in the CGP","dateModified":"2021-01-29T00:00:00-06:00","datePublished":"2021-01-29T00:00:00-06:00","description":"CGP GeoView","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/geoca_developers_page/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://bo-lu.github.io/geoca_developers_page/feed.xml" title="Developer Resources for the Geo.ca Catalogue" /><link rel="shortcut icon" type="image/x-icon" href="/geoca_developers_page/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/geoca_developers_page/">Developer Resources for the Geo.ca Catalogue</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/geoca_developers_page/about/">About</a><a class="page-link" href="/geoca_developers_page/search/">Search</a><a class="page-link" href="/geoca_developers_page/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">An overview of Viewer technology used in the CGP</h1><p class="page-description">CGP GeoView</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-01-29T00:00:00-06:00" itemprop="datePublished">
+        Jan 29, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/geoca_developers_page/categories/#markdown">markdown</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#geoview">GeoView</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#viewer-technology-used-in-the-cgp">Viewer technology used in the CGP</a></li>
+<li class="toc-entry toc-h2"><a href="#solution">Solution</a></li>
+<li class="toc-entry toc-h2"><a href="#developpement">Developpement</a></li>
+<li class="toc-entry toc-h2"><a href="#building-the-project">Building the project</a></li>
+<li class="toc-entry toc-h2"><a href="#deploy-to-gh-pages">Deploy to gh-pages</a></li>
+<li class="toc-entry toc-h2"><a href="#usage">Usage</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#contributing-to-the-project">Contributing to the project</a></li>
+</ul>
+</li>
+</ul><h1 id="geoview">
+<a class="anchor" href="#geoview" aria-hidden="true"><span class="octicon octicon-link"></span></a>GeoView</h1>
+
+<h2 id="viewer-technology-used-in-the-cgp">
+<a class="anchor" href="#viewer-technology-used-in-the-cgp" aria-hidden="true"><span class="octicon octicon-link"></span></a>Viewer technology used in the CGP</h2>
+
+<p>The Canadian Geospatial Platform intends to deploy new infrastructure, tools and web integration of GeoCore, a new geospatial metadata lake library capable of supporting multiple metadata standards. In recognition of these desired capabilities, it needs a lightweight viewer to incorporate in their infrastructure. The need is to have a simple and flexible viewer to display geospatial data from GeoCore metadata lake on a map with limited functionalities.</p>
+
+<p><a href="https://jolevesq.github.io/GeoView/index.html">Demo</a></p>
+
+<h2 id="solution">
+<a class="anchor" href="#solution" aria-hidden="true"><span class="octicon octicon-link"></span></a>Solution</h2>
+
+<p>GeoView mapping capabilites are based on <a href="https://github.com/Leaflet/Leaflet">Leafet</a> open source viewer. The overall project uses the latest <a href="https://reactjs.org/">React</a> framework version 17+. With this in mind, here is the list of the main dependencies</p>
+<ul>
+  <li>
+<a href="https://react-leaflet.js.org/">react-leaflet</a> version 3+ to make the link between Leafelt and React</li>
+  <li>
+<a href="https://www.i18next.com/">i18next</a> to do localization in English and French</li>
+  <li>
+<a href="https://material-ui.com/">material-ui</a> to do the layout</li>
+</ul>
+
+<h2 id="developpement">
+<a class="anchor" href="#developpement" aria-hidden="true"><span class="octicon octicon-link"></span></a>Developpement</h2>
+
+<p>Developement is made with <a href="https://code.visualstudio.com/">Visual Studio Code</a> and uses few extentions to help linting and formating</p>
+<ul>
+  <li>Prettier</li>
+  <li>ESLint</li>
+  <li>Better Comments</li>
+</ul>
+
+<h2 id="building-the-project">
+<a class="anchor" href="#building-the-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Building the project</h2>
+
+<p>To install the project, just run
+<code class="language-plaintext highlighter-rouge">npm install</code></p>
+
+<p>To serve the project, just run
+<code class="language-plaintext highlighter-rouge">npm run serve</code> and GeoView will be serve from http://localhost:8080/</p>
+
+<h2 id="deploy-to-gh-pages">
+<a class="anchor" href="#deploy-to-gh-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Deploy to gh-pages</h2>
+
+<p>To deploy the project, just run
+<code class="language-plaintext highlighter-rouge">npm run build</code></p>
+
+<p>Then push the dist folder to your gh-pages
+<code class="language-plaintext highlighter-rouge">npm run deploy</code></p>
+
+<p>The project is now serve inside your GitHub gh-pages at
+`https://[GITHUB-USERNAME].github.io/GeoView/index.html</p>
+
+<p><em>Make sure GitHub pages are active inside your origin repository</em></p>
+
+<h2 id="usage">
+<a class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>We’ll go through the simplest way to use the Canadian Geospatial Platform Viewer.</p>
+
+<p>First, grab the most recent release from the <a href="https://github.com/Canadian-Geospatial-Platform/GeoView/releases">github releases</a>. Place the files cgpv-main.js and cgpv-styles.css within your webpage’s folder structure. Place also the img and locales folder at the same place. We usually put.</p>
+
+<p>Then you want to include those files on your page</p>
+
+<p>Within head</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/cgpv-styles.css"</span> <span class="nt">/&gt;</span>
+</code></pre></div></div>
+
+<p>Near the end of the body</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/cgpv-main.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p>Now that you have the required files on your page we should add the map element. There is 3 ways to do this</p>
+<ul>
+  <li>Map div element
+    <div class="language-html highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"mapLCC"</span> <span class="na">class=</span><span class="s">"llwp-map"</span> <span class="na">data-leaflet=</span><span class="s">"{ 'projection': 3978, 'zoom': 12, 'center': [45,-75], 'language': 'fr-CA', layers:[] }"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+<em>Work in progress</em> -&gt; Url: The url will have parameters to setup the map. The map div, a div element with class <strong>llwp-map</strong>, must be on the page
+    <div class="language-html highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"mapLCC"</span> <span class="na">class=</span><span class="s">"llwp-map"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+<em>Work in progress</em> -&gt; Code: call the create map function from cgpv-main.js with needed parameters</li>
+</ul>
+
+<h4 id="parameters">
+<a class="anchor" href="#parameters" aria-hidden="true"><span class="octicon octicon-link"></span></a>Parameters</h4>
+<ul>
+  <li>projection: The basemap projection to use for the map. Accepted values are 3857 (Web Mercator) or 3978 (LCC)</li>
+  <li>zoom: The basemap zomm level. Accepted value is a number between 0 and 20</li>
+  <li>center: The default center extent when the map loads. Accepted value is a pair of coordinates [lattitude, longitude]</li>
+  <li>language: The map language for labels and tooltips. Accepted values are en-CA and fr-CA</li>
+  <li>layers: Array of layers to add to the map
+    <ul>
+      <li>url: The service url</li>
+      <li>type: The layer type. Accepted values are esriFeature, esriDynamic, ogcWMS</li>
+      <li>entries: For esriDynamic and ogcWMS a list of entries must be specified</li>
+    </ul>
+
+    <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>      'layers':[
+          { 'url': 'https://webservices.maps.canada.ca/arcgis/services/StatCan/census_subdivisions_2016_en/MapServer/WMSServer', 'type': 'ogcWMS', 'entries': '0' },
+          { 'url': 'https://geoappext.nrcan.gc.ca/arcgis/rest/services/NRCAN/Investing_Energy_Canada_en/MapServer', 'type': 'esriDynamic', 'entries': '0, 2' },
+          { 'url': 'https://geoappext.nrcan.gc.ca/arcgis/rest/services/GSCC/Geochronology/MapServer', 'type': 'esriDynamic', 'entries': '0' },
+          { 'url': 'https://geo.weather.gc.ca/geomet', 'type': 'ogcWMS', 'entries': 'RAQDPS-FW.CE_PM2.5-DIFF-YAvg' }
+      ]
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="contributing-to-the-project">
+<a class="anchor" href="#contributing-to-the-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing to the project</h2>
+<p>see our <a href="https://github.com/Canadian-Geospatial-Platform/GeoView/wiki/Contributing-Guideline">wiki</a></p>
+
+  </div><a class="u-url" href="/geoca_developers_page/markdown/2021/01/29/GeoView.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/geoca_developers_page/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/geoca_developers_page/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/geoca_developers_page/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy introduction to the standards supported by geo.ca.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/bo-lu" title="bo-lu"><svg class="svg-icon grey"><use xlink:href="/geoca_developers_page/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/b5lu" title="b5lu"><svg class="svg-icon grey"><use xlink:href="/geoca_developers_page/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
