@@ -78,7 +78,10 @@
   
 
   
-      ,"page9": {
+  
+
+  
+      ,"page10": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://bo-lu.github.io/geoca_developers_page/robots.txt",
