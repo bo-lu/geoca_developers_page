@@ -21,5 +21,6 @@ Below is a high-level architecture of metadata harvesting and publication workfl
 For more information on the OGC API standards, please visit the [OGC API Roadmap](https://ogcapi.ogc.org/).
 
 Geo.ca uses the OGC Certified Compliant CSW implementation [pycsw](https://pycsw.org/). At the time of this writing the version of pycsw is 2.7.0
+
 Geo.ca uses the OGC Certified Compliant implementation [pygeoapi](https://pygeoapi.io/). At the time of this writing the version of pygeoapi is 0.10
 
