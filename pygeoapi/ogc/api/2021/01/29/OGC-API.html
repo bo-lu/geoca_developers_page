@@ -10,13 +10,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Open Geospatial Consortium (OGC) API standards" />
 <meta property="og:description" content="Open Geospatial Consortium (OGC) API standards" />
-<link rel="canonical" href="https://bo-lu.github.io/geoca_developers_page/markdown/pygeoapi/ogc/api/2021/01/29/OGC-API.html" />
-<meta property="og:url" content="https://bo-lu.github.io/geoca_developers_page/markdown/pygeoapi/ogc/api/2021/01/29/OGC-API.html" />
+<link rel="canonical" href="https://bo-lu.github.io/geoca_developers_page/pygeoapi/ogc/api/2021/01/29/OGC-API.html" />
+<meta property="og:url" content="https://bo-lu.github.io/geoca_developers_page/pygeoapi/ogc/api/2021/01/29/OGC-API.html" />
 <meta property="og:site_name" content="Developer resources for geo.ca" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-01-29T00:00:00-06:00" />
 <script type="application/ld+json">
-{"url":"https://bo-lu.github.io/geoca_developers_page/markdown/pygeoapi/ogc/api/2021/01/29/OGC-API.html","@type":"BlogPosting","headline":"An easy guide in using the OGC API - Records endpoint","dateModified":"2021-01-29T00:00:00-06:00","datePublished":"2021-01-29T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://bo-lu.github.io/geoca_developers_page/markdown/pygeoapi/ogc/api/2021/01/29/OGC-API.html"},"description":"Open Geospatial Consortium (OGC) API standards","@context":"https://schema.org"}</script>
+{"url":"https://bo-lu.github.io/geoca_developers_page/pygeoapi/ogc/api/2021/01/29/OGC-API.html","@type":"BlogPosting","headline":"An easy guide in using the OGC API - Records endpoint","dateModified":"2021-01-29T00:00:00-06:00","datePublished":"2021-01-29T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://bo-lu.github.io/geoca_developers_page/pygeoapi/ogc/api/2021/01/29/OGC-API.html"},"description":"Open Geospatial Consortium (OGC) API standards","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/geoca_developers_page/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://bo-lu.github.io/geoca_developers_page/feed.xml" title="Developer resources for geo.ca" /><link rel="shortcut icon" type="image/x-icon" href="/geoca_developers_page/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -84,9 +84,6 @@ window.onload = wrap_img;
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/geoca_developers_page/categories/#markdown">markdown</a>
-        &nbsp;
-      
         <a class="category-tags-link" href="/geoca_developers_page/categories/#pygeoapi">pygeoapi</a>
         &nbsp;
       
@@ -129,6 +126,7 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h2"><a href="#the-ogc-api-standards">The OGC API standards</a></li>
 <li class="toc-entry toc-h2"><a href="#geoca-ogc-api-how-to">Geo.ca OGC API How-to</a></li>
+<li class="toc-entry toc-h2"><a href="#features">Features</a></li>
 </ul>
 </li>
 </ul><h1 id="how-to-use-the-geoca-ogc-api-endpoint">
@@ -137,17 +135,22 @@ window.onload = wrap_img;
 <h2 id="the-ogc-api-standards">
 <a class="anchor" href="#the-ogc-api-standards" aria-hidden="true"><span class="octicon octicon-link"></span></a>The OGC API standards</h2>
 
-<p>Geo.ca has implemented the developing OGC API family of standards. These new standards build upon the legacy of OGC Web standards (WMS, WFS, WCS, WPS, CSW, etc.), but uses modern web standards to access geospatial content. As the OGC API standards evolve and are finalized, geo.ca will leverage these new standards in building interoperable</p>
+<p>Geo.ca has implemented the developing OGC API family of standards. These new standards build upon the legacy of OGC Web standards (WMS, WFS, WCS, WPS, CSW, etc.), but uses modern web standards to access geospatial content. As the OGC API standards evolve and are finalized, geo.ca will leverage these new standards in building interoperable systems to lower the barrier of accessing metadata.</p>
+
+<p>Since the OGC API - Records is in draft, the standard is subject to change. By the end of 2021, more formal documents will be availiable from OGC and adequate warning will be provided when changes occur.</p>
 
 <p>For more information on the OGC API standards, please visit the <a href="https://ogcapi.ogc.org/">OGC API Roadmap</a>.</p>
 
 <h2 id="geoca-ogc-api-how-to">
 <a class="anchor" href="#geoca-ogc-api-how-to" aria-hidden="true"><span class="octicon octicon-link"></span></a>Geo.ca OGC API How-to</h2>
 
-<p>Geo.ca uses the OGC Certified Compliant implementation <a href="https://pygeoapi.io/">pygeoapi</a>. At the time of this writing the version of pygeoapi is 0.10</p>
+<p>Geo.ca uses <a href="https://pygeoapi.io/">pygeoapi</a>, which is certified OGC Compliant and an OGC Reference Implementation. At the time of this writing the version of pygeoapi is v0.10</p>
+
+<h2 id="features">
+<a class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h2>
 
 
-  </div><a class="u-url" href="/geoca_developers_page/markdown/pygeoapi/ogc/api/2021/01/29/OGC-API.html" hidden></a>
+  </div><a class="u-url" href="/geoca_developers_page/pygeoapi/ogc/api/2021/01/29/OGC-API.html" hidden></a>
 </article>
 
       </div>

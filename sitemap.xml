@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://bo-lu.github.io/geoca_developers_page/fastpages/jupyter/2020/01/29/intro.html</loc>
-<lastmod>2020-01-29T00:00:00-06:00</lastmod>
-</url>
-<url>
 <loc>https://bo-lu.github.io/geoca_developers_page/markdown/csw/pycsw/ogc/hnap/2021/01/26/pycsw_howto.html</loc>
 <lastmod>2021-01-26T00:00:00-06:00</lastmod>
 </url>
@@ -13,7 +9,7 @@
 <lastmod>2021-01-29T00:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>https://bo-lu.github.io/geoca_developers_page/markdown/pygeoapi/ogc/api/2021/01/29/OGC-API.html</loc>
+<loc>https://bo-lu.github.io/geoca_developers_page/pygeoapi/ogc/api/2021/01/29/OGC-API.html</loc>
 <lastmod>2021-01-29T00:00:00-06:00</lastmod>
 </url>
 <url>
