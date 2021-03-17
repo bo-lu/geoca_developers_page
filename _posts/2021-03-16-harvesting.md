@@ -13,7 +13,9 @@ Geo.ca uses a suite of Open Geospatial Consortium (OGC) standards to make metada
 
 As a Strategic Partner of the OGC (through GeoConnections - Natural Resources Canada), geo.ca supports the development of the OGC API - Records standard to make geospatial content access using modern web practices.
 
-Below is a high-level architecture of metadata harvesting and publication workflow
+Below is a high-level architecture of metadata harvesting and publication workflow.
+
+<iframe frameborder="0" style="width:100%;height:765px;" src="https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=current_future_harvesting_workflow.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fbo-lu%2Fgeoca_developers_page%2Fmaster%2Fassets%2Fcurrent_future_harvesting_workflow.drawio"></iframe>
 
 
 ## More information
