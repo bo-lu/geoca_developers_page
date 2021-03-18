@@ -1,1 +1,1 @@
-Sitemap: https://bo-lu.github.io/geoca_developers_page/sitemap.xml
+Sitemap: https://canadian-geospatial-platform.github.io/geoca_developers_page/sitemap.xml

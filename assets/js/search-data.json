@@ -4,7 +4,7 @@
         "post0": {
             "title": "Harvesting technologies used by the Federal Geospatial Platform",
             "content": "Overview of Harvesting Technologies . The OGC API standards . Geo.ca uses a suite of Open Geospatial Consortium (OGC) standards to make metadata accessible and interoperable. To this end, the legacy OGC standard, Catalogue Service for the Web or CSW, is the current mechanism to accomplish these goals. . As a Strategic Partner of the OGC (through GeoConnections - Natural Resources Canada), geo.ca supports the development of the OGC API - Records standard to make geospatial content access using modern web practices. . Below is a high-level architecture of metadata harvesting and publication workflow. . More information . For more information on the OGC API standards, please visit the OGC API Roadmap. . Geo.ca uses the OGC Certified Compliant CSW implementation pycsw. At the time of this writing the version of pycsw is 2.7.0 . Geo.ca uses the OGC Certified Compliant implementation pygeoapi. At the time of this writing the version of pygeoapi is 0.10 .",
-            "url": "https://bo-lu.github.io/geoca_developers_page/csw/pygeoapi/ogc/api/2021/03/16/harvesting.html",
+            "url": "https://canadian-geospatial-platform.github.io/geoca_developers_page/csw/pygeoapi/ogc/api/2021/03/16/harvesting.html",
             "relUrl": "/csw/pygeoapi/ogc/api/2021/03/16/harvesting.html",
             "date": " • Mar 16, 2021"
         }
@@ -15,7 +15,7 @@
         ,"post1": {
             "title": "An easy guide in using the OGC API - Records endpoint",
             "content": "How to use the geo.ca OGC API endpoint . The OGC API standards . Geo.ca has implemented the developing OGC API family of standards. These new standards build upon the legacy of OGC Web standards (WMS, WFS, WCS, WPS, CSW, etc.), but uses modern web standards to access geospatial content. As the OGC API standards evolve and are finalized, geo.ca will leverage these new standards in building interoperable systems to lower the barrier of accessing metadata. . Since the OGC API - Records is in draft, the standard is subject to change. By the end of 2021, more formal documents will be availiable from OGC and adequate warning will be provided when changes occur. . For more information on the OGC API standards, please visit the OGC API Roadmap. . Geo.ca OGC API How-to . Geo.ca uses pygeoapi, which is certified OGC Compliant and an OGC Reference Implementation. At the time of this writing the version of pygeoapi is v0.10 . Features .",
-            "url": "https://bo-lu.github.io/geoca_developers_page/pygeoapi/ogc/api/2021/01/29/OGC-API.html",
+            "url": "https://canadian-geospatial-platform.github.io/geoca_developers_page/pygeoapi/ogc/api/2021/01/29/OGC-API.html",
             "relUrl": "/pygeoapi/ogc/api/2021/01/29/OGC-API.html",
             "date": " • Jan 29, 2021"
         }
@@ -26,7 +26,7 @@
         ,"post2": {
             "title": "An overview of Viewer technology used in the CGP",
             "content": "GeoView . Viewer technology used in the CGP . The Canadian Geospatial Platform intends to deploy new infrastructure, tools and web integration of GeoCore, a new geospatial metadata lake library capable of supporting multiple metadata standards. In recognition of these desired capabilities, it needs a lightweight viewer to incorporate in their infrastructure. The need is to have a simple and flexible viewer to display geospatial data from GeoCore metadata lake on a map with limited functionalities. . Demo . Solution . GeoView mapping capabilites are based on Leafet open source viewer. The overall project uses the latest React framework version 17+. With this in mind, here is the list of the main dependencies . react-leaflet version 3+ to make the link between Leafelt and React | i18next to do localization in English and French | material-ui to do the layout | . Developpement . Developement is made with Visual Studio Code and uses few extentions to help linting and formating . Prettier | ESLint | Better Comments | . Building the project . To install the project, just run npm install . To serve the project, just run npm run serve and GeoView will be serve from http://localhost:8080/ . Deploy to gh-pages . To deploy the project, just run npm run build . Then push the dist folder to your gh-pages npm run deploy . The project is now serve inside your GitHub gh-pages at `https://[GITHUB-USERNAME].github.io/GeoView/index.html . Make sure GitHub Pages are active inside your origin repository . Usage . We’ll go through the simplest way to use the Canadian Geospatial Platform Viewer. . First, grab the most recent release from the github releases. Place the files cgpv-main.js and cgpv-styles.css within your webpage’s folder structure. Place also the img and locales folder at the same place. We usually put. . Then you want to include those files on your page . Within head . &lt;link rel=&quot;stylesheet&quot; href=&quot;/cgpv-styles.css&quot; /&gt; . Near the end of the body . &lt;script src=&quot;/cgpv-main.js&quot;&gt;&lt;/script&gt; . Now that you have the required files on your page we should add the map element. There is 3 ways to do this . Map div element &lt;div id=&quot;mapLCC&quot; class=&quot;llwp-map&quot; data-leaflet=&quot;{ &#39;projection&#39;: 3978, &#39;zoom&#39;: 12, &#39;center&#39;: [45,-75], &#39;language&#39;: &#39;fr-CA&#39;, layers:[] }&quot;&gt;&lt;/div&gt; . | Work in progress -&gt; Url: The url will have parameters to setup the map. The map div, a div element with class llwp-map, must be on the page &lt;div id=&quot;mapLCC&quot; class=&quot;llwp-map&quot;&gt;&lt;/div&gt; . | Work in progress -&gt; Code: call the create map function from cgpv-main.js with needed parameters | . Parameters . projection: The basemap projection to use for the map. Accepted values are 3857 (Web Mercator) or 3978 (LCC) | zoom: The basemap zomm level. Accepted value is a number between 0 and 20 | center: The default center extent when the map loads. Accepted value is a pair of coordinates [lattitude, longitude] | language: The map language for labels and tooltips. Accepted values are en-CA and fr-CA | layers: Array of layers to add to the map url: The service url | type: The layer type. Accepted values are esriFeature, esriDynamic, ogcWMS | entries: For esriDynamic and ogcWMS a list of entries must be specified | . &#39;layers&#39;:[ { &#39;url&#39;: &#39;https://webservices.maps.canada.ca/arcgis/services/StatCan/census_subdivisions_2016_en/MapServer/WMSServer&#39;, &#39;type&#39;: &#39;ogcWMS&#39;, &#39;entries&#39;: &#39;0&#39; }, { &#39;url&#39;: &#39;https://geoappext.nrcan.gc.ca/arcgis/rest/services/NRCAN/Investing_Energy_Canada_en/MapServer&#39;, &#39;type&#39;: &#39;esriDynamic&#39;, &#39;entries&#39;: &#39;0, 2&#39; }, { &#39;url&#39;: &#39;https://geoappext.nrcan.gc.ca/arcgis/rest/services/GSCC/Geochronology/MapServer&#39;, &#39;type&#39;: &#39;esriDynamic&#39;, &#39;entries&#39;: &#39;0&#39; }, { &#39;url&#39;: &#39;https://geo.weather.gc.ca/geomet&#39;, &#39;type&#39;: &#39;ogcWMS&#39;, &#39;entries&#39;: &#39;RAQDPS-FW.CE_PM2.5-DIFF-YAvg&#39; } ] . | . Contributing to the project . see our wiki .",
-            "url": "https://bo-lu.github.io/geoca_developers_page/markdown/viewer/leaflet/2021/01/29/GeoView.html",
+            "url": "https://canadian-geospatial-platform.github.io/geoca_developers_page/markdown/viewer/leaflet/2021/01/29/GeoView.html",
             "relUrl": "/markdown/viewer/leaflet/2021/01/29/GeoView.html",
             "date": " • Jan 29, 2021"
         }
@@ -37,7 +37,7 @@
         ,"post3": {
             "title": "An easy guide in using the CSW endpoint",
             "content": "How to use the geo.ca CSW endpoint . The CSW and HNAP standard . Catalogue Service for the Web (CSW) is an Open Geospatial Consortium (OGC) standard used to publish and search for metadata, services and related information objects. On geo.ca, the metadata standard is structured according to the North American Profile of ISO 19115:2003 (NAP). . However, due to the flexible nature of the NAP standard, the Government of Canada has created a Harmonized North American Profile (HNAP) which takes the elements provided in the NAP but adjusts the cardinalities of the elements and specific business rules to control the values allowed in certain elements. For example, keywords used in metadata records must be recorded in the Government of Canada Core Subject Thesaurus. . Geo.ca CSW How-to . The geo.ca uses the OGC Certified Compliant CSW implementation pycsw. At the time of this writing the version of pycsw is 2.7.0 .",
-            "url": "https://bo-lu.github.io/geoca_developers_page/markdown/csw/pycsw/ogc/hnap/2021/01/26/pycsw_howto.html",
+            "url": "https://canadian-geospatial-platform.github.io/geoca_developers_page/markdown/csw/pycsw/ogc/hnap/2021/01/26/pycsw_howto.html",
             "relUrl": "/markdown/csw/pycsw/ogc/hnap/2021/01/26/pycsw_howto.html",
             "date": " • Jan 26, 2021"
         }
@@ -52,7 +52,7 @@
       ,"page1": {
           "title": "About",
           "content": ".",
-          "url": "https://bo-lu.github.io/geoca_developers_page/about/",
+          "url": "https://canadian-geospatial-platform.github.io/geoca_developers_page/about/",
           "relUrl": "/about/",
           "date": ""
       }
@@ -84,7 +84,7 @@
       ,"page10": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
-          "url": "https://bo-lu.github.io/geoca_developers_page/robots.txt",
+          "url": "https://canadian-geospatial-platform.github.io/geoca_developers_page/robots.txt",
           "relUrl": "/robots.txt",
           "date": ""
       }
