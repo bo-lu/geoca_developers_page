@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-24T19:21:42.520Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="IjjEzu5-OfYdPy6EjcnE" version="14.4.9" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-24T19:35:54.139Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="GZ2LYn5eoR25ugqUMRfP" version="14.4.9" type="github" pages="2">
   <diagram id="-pNLefhiNSFeHPePN7iX" name="Current">
-    <mxGraphModel dx="1038" dy="532" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1150" pageHeight="770" math="0" shadow="0">
+    <mxGraphModel dx="4152" dy="2128" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1150" pageHeight="770" math="0" shadow="0">
       <root>
         <mxCell id="SS1UO9asb9NOfLbzNGHr-0" />
         <object label="" id="SS1UO9asb9NOfLbzNGHr-1">
@@ -317,7 +317,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ahC_yUcN1st9t9DQTWyl" name="Future">
-    <mxGraphModel dx="1038" dy="532" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1150" pageHeight="770" math="0" shadow="0">
+    <mxGraphModel dx="2076" dy="1064" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1150" pageHeight="770" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -607,6 +607,9 @@
         </mxCell>
         <mxCell id="vs6cXFay17yE824Je1kT-100" value="&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#4277BB&quot;&gt;Prov/Terr Open Data&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;labelBackgroundColor=#ffffff;fontColor=#FF8000;" parent="1" vertex="1">
           <mxGeometry x="30" y="430.17" width="155" height="2.25" as="geometry" />
+        </mxCell>
+        <mxCell id="PDG7E0DrltOwAJsjcXat-1" value="" style="swimlane;shadow=0;strokeColor=#4277BB;fontColor=#4277BB;align=right;startSize=0;collapsible=0;strokeWidth=3;fillColor=#ECBF1B;fontSize=14;horizontal=1;" vertex="1" parent="1">
+          <mxGeometry x="6" y="167" width="1140.4" height="594" as="geometry" />
         </mxCell>
         <mxCell id="IGkpPyEYyzUKQNZLw_xS-1" value="ProvTerr Open Data" parent="0" visible="0" />
         <UserObject label="&lt;div align=&quot;left&quot;&gt;Provincial and Territorial metadata were obtained from a number of cataloguing technologies. Additional details: &lt;a href=&quot;https://federal-geospatial-platform.github.io/fgp-metadata-proxy/PT%20Catalogues-Portals&quot;&gt;https://federal-geospatial-platform.github.io/fgp-metadata-proxy/PT%20Catalogues-Portals&lt;/a&gt;&lt;/div&gt;" link="https://federal-geospatial-platform.github.io/fgp-metadata-proxy/PT%20Catalogues-Portals" id="EFY372BjXMTSHXOgK9i_-2">
