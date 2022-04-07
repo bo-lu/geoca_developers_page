@@ -7,6 +7,6 @@
 This repository contains developer content and documentation for the geo.ca catalogue. Please note, that these documentation are in demo / draft status.
 
 Github Pages can be accessed on:
-https://Canadian-Geospatial-Platform.github.io/geoca_developers_page
+https://bo-lu.github.io/geoca_developers_page
 
 _powered by [fastpages](https://github.com/fastai/fastpages)_
